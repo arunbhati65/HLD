@@ -1,4 +1,4 @@
-package com.hld.webservices.hldrestfulwebservices;
+package com.hld.webservices.hldrestfulwebservices.helloworld;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,7 +12,7 @@ public class HelloWorldController {
 	}
 
 	@GetMapping("/hello-world-bean")
-	public HelloWorldBean helloWorldBean(){
-		return new HelloWorldBean("Hello World");
+	public com.hld.webservices.hldrestfulwebservices.helloworld.HelloWorldBean helloWorldBean(){
+		return new com.hld.webservices.hldrestfulwebservices.helloworld.HelloWorldBean("Hello World!!");
 	}
 }

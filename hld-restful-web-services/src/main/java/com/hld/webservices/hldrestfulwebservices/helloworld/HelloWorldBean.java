@@ -1,4 +1,4 @@
-package com.hld.webservices.hldrestfulwebservices;
+package com.hld.webservices.hldrestfulwebservices.helloworld;
 
 public class HelloWorldBean {
 	private String message;

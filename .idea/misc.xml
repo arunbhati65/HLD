@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/../hld-restful-web-services/pom.xml" />
+        <option value="$PROJECT_DIR$/hld-restful-web-services/pom.xml" />
       </list>
     </option>
   </component>
