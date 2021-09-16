@@ -30,7 +30,7 @@ public class UserResource {
 	}
 
 	@GetMapping("/user/{id}")
-	public EntityModel<User> retrieveOneUser(@PathVariable int id) {   // HATEOS support
+	public EntityModel<User> retrieveOneUser(@PathVariable int id) {   // HATEOS(Hypermedia as engine of application state) support(data + links(actions)) (31)
 		User user = service.findOne(id);
 		if (user == null) {
 			throw new UserNotFoundException("id-" + id);
