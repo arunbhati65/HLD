@@ -13,15 +13,22 @@ public class CurrencyExchangeController {
 
 	@Autowired
 	private Environment fEnvironment;
+
+	@Autowired
+	private CurrencyExchangeRepository fCurrencyExchangeRepository;
+
 	@GetMapping("/currency-exchange/from/{from}/to/{to}")
 	public CurrencyExchange retriveExchangeValue(
 			@PathVariable String from,
 			@PathVariable String to
 	){
-		CurrencyExchange currencyExcahnge = new CurrencyExchange(1000L, from, to,
-				BigDecimal.valueOf(75));
+		CurrencyExchange currencyExcahnge =fCurrencyExchangeRepository.findByFromAndTo(from,to);
+				//new CurrencyExchange(1000L, from, to, BigDecimal.valueOf(75));
+		if(currencyExcahnge==null)
+			throw new RuntimeException("unable to find data"+from+"---"+to);
 		String port=fEnvironment.getProperty("local.server.port");
 		currencyExcahnge.setEnvironment(port);
+
 		return currencyExcahnge;
 	}
 }
