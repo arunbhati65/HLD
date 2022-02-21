@@ -6,10 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hld-restful-web-services" />
         <module name="currency-exchange-service" />
         <module name="currency-conversion-service" />
-        <module name="limits-service" />
         <module name="spring-cloud-config-server" />
       </profile>
     </annotationProcessing>
