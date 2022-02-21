@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="currency-exchange-service" />
+        <module name="naming-server-eureka" />
         <module name="currency-conversion-service" />
         <module name="spring-cloud-config-server" />
       </profile>
@@ -16,6 +17,7 @@
       <module name="currency-exchange-service" target="11" />
       <module name="hld-restful-web-services" target="1.8" />
       <module name="limits-service" target="11" />
+      <module name="naming-server-eureka" target="11" />
       <module name="spring-cloud-config-server" target="11" />
     </bytecodeTargetLevel>
   </component>
@@ -25,6 +27,7 @@
       <module name="currency-exchange-service" options="-parameters" />
       <module name="hld-restful-web-services" options="-parameters" />
       <module name="limits-service" options="-parameters" />
+      <module name="naming-server-eureka" options="-parameters" />
       <module name="spring-cloud-config-server" options="-parameters" />
     </option>
   </component>
