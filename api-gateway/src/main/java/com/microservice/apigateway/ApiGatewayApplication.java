@@ -9,5 +9,11 @@ public class ApiGatewayApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ApiGatewayApplication.class, args);
 	}
-
+	//effective way to route
+	//security
+	//monitoring metrics
+	//match routes on any request attribute
+	//define predicates and filters
+	//load balancing(Soring cloud discovery client)
+	//path rewriting
 }
