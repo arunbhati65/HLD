@@ -24,30 +24,30 @@ docker container ls
 docker run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
 docker run -p 5001:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
 
-Docker tag
+docker tag
 
-Docker pull mysql<- official docker image certified by docker team
-Docker image history
-Docker image inspect
-Docker images
+docker pull mysql<- official docker image certified by docker team
+docker image history
+docker image inspect
+docker images
 
-Docker container pause container_id
-Docker container unpause container_id
-dcoker container inspect container_id
-Docker logs
-Docker container prone
-dCoker container logs -f containerID//gracefully close container//SIGTERM
-Docker container kill containerID//SIGKILL forcefully kill container
+docker container pause container_id
+docker container unpause container_id
+docker container inspect container_id
+docker logs
+docker container prone
+docker container logs -f containerID  //gracefully close container//SIGTERM
+docker container kill containerID     //SIGKILL forcefully kill container
 
 docker run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
-—restart=always// start container on restart
+—restart=always    // start container on restart
 
-Docker top //to see top process
-Docker stats
-Docker -m 512m —cpu-quota 5000
+docker top //to see top process
+docker stats
+docker -m 512m —cpu-quota 5000
 
-Docker system df
-Docker events
+docker system df
+docker events
 
 Distributed tracing
 docker run -p 9411:9411 openzipkin/zipkin:2.23
