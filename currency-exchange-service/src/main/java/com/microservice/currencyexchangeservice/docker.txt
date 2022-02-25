@@ -49,7 +49,7 @@ Docker -m 512m —cpu-quota 5000
 Docker system df
 Docker events
 
-Distributed tracing 
+Distributed tracing
 docker run -p 9411:9411 openzipkin/zipkin:2.23
 
 
