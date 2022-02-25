@@ -1,0 +1,55 @@
+Docker
+
+Docker HUB(Repository for Images)
+
+container/s Image
+
+Docker client->Docker demon->(Container ,local image, image registry)
+
+
+Install easily,Light weight, cloud freindly(cloud provide container based services)
+
+Virual machine(Guest OS)->Hyperviser->HostOS->Hardware
+Container->                     Docker Engine->HostOS->Cloud Infra
+
+Comands:-
+docker run -d -p 80:80 docker/getting-started
+You'll notice a few flags being used. Here's some more info on them:
+* -d - run the container in detached mode (in the background)
+* -p 80:80 - map port 80 of the host to port 80 in the container
+* docker/getting-started - the image to use
+
+docker --version
+docker container ls
+docker run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
+docker run -p 5001:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
+
+Docker tag
+
+Docker pull mysql<- official docker image certified by docker team
+Docker image history
+Docker image inspect
+Docker images
+
+Docker container pause container_id
+Docker container unpause container_id
+dcoker container inspect container_id
+Docker logs
+Docker container prone
+dCoker container logs -f containerID//gracefully close container//SIGTERM
+Docker container kill containerID//SIGKILL forcefully kill container
+
+docker run -p 5000:5000 -d in28min/todo-rest-api-h2:1.0.0.RELEASE
+—restart=always// start container on restart
+
+Docker top //to see top process
+Docker stats
+Docker -m 512m —cpu-quota 5000
+
+Docker system df
+Docker events
+
+Distributed tracing 
+docker run -p 9411:9411 openzipkin/zipkin:2.23
+
+
