@@ -8,19 +8,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
         <module name="currency-exchange-service" />
-        <module name="naming-server-eureka" />
         <module name="currency-conversion-service" />
-        <module name="spring-cloud-config-server" />
+        <module name="naming-server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="api-gateway" target="11" />
-      <module name="currency-conversion-service" target="11" />
-      <module name="currency-exchange-service" target="11" />
-      <module name="hld-restful-web-services" target="1.8" />
-      <module name="limits-service" target="11" />
-      <module name="naming-server-eureka" target="11" />
-      <module name="spring-cloud-config-server" target="11" />
+    <bytecodeTargetLevel target="8">
+      <module name="api-gateway" target="16" />
+      <module name="currency-conversion-service" target="16" />
+      <module name="currency-exchange-service" target="16" />
+      <module name="naming-server" target="16" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -28,10 +24,7 @@
       <module name="api-gateway" options="-parameters" />
       <module name="currency-conversion-service" options="-parameters" />
       <module name="currency-exchange-service" options="-parameters" />
-      <module name="hld-restful-web-services" options="-parameters" />
-      <module name="limits-service" options="-parameters" />
-      <module name="naming-server-eureka" options="-parameters" />
-      <module name="spring-cloud-config-server" options="-parameters" />
+      <module name="naming-server" options="-parameters" />
     </option>
   </component>
 </project>

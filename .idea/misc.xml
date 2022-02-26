@@ -4,15 +4,14 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/../hld-restful-web-services/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-cloud-config-server/pom.xml" />
-        <option value="$PROJECT_DIR$/currency-exchange-service/pom.xml" />
-        <option value="$PROJECT_DIR$/currency-conversion-service/pom.xml" />
-        <option value="$PROJECT_DIR$/naming-server-eureka/pom.xml" />
-        <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/04.docker/naming-server/pom.xml" />
+        <option value="$PROJECT_DIR$/04.docker/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/04.docker/currency-conversion-service/pom.xml" />
+        <option value="$PROJECT_DIR$/04.docker/currency-exchange-service/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
